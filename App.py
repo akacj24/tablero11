@@ -15,9 +15,9 @@ st.write("You selected:", drawing_mode)
 
 
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-stroke_color = st.color_picker("Pick A Color", "#00f900")
+stroke_color = st.color_picker("Pick A Color")
 st.write("The current color is", color)
-bg_color = st.color_picker("Pick A Background Color", "#00f900")
+bg_color = st.color_picker("Pick A Background Color")
 
 # Create a canvas component
 canvas_result = st_canvas(
