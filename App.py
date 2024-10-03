@@ -12,9 +12,9 @@ drawing_mode = st.selectbox(
 )
 
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-  stroke_color = st.color_picker("Pick A Color")
+  stroke_color = st.color_picker("Pick A Color", "#00f900")
   st.write("The current color is", color)
-  bg_color = st.color_picker("Pick A Background Color")
+  bg_color = st.color_picker("Pick A Background Color", "#00f900")
 
 st.write("You selected:", drawing_mode)
 
