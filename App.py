@@ -7,8 +7,13 @@ with st.sidebar:
   stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
 
 drawing_mode = st.selectbox(
-  ("freedraw")
+    "Select the drawing mode",
+    ("freedraw", "Home phone", "Mobile phone"),
 )
+
+st.write("You selected:", option)
+
+
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
 stroke_color = st.color_picker("Pick A Color", "#00f900")
 st.write("The current color is", color)
