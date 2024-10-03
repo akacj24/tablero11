@@ -12,7 +12,7 @@ with st.sidebar:
   
 drawing_mode = st.selectbox(
     "Select the drawing mode",
-    ("freedraw", "Home phone", "Mobile phone"),
+    ("freedraw", "line", "rect"),
 )
 
 st.write("You selected:", drawing_mode)
