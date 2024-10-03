@@ -11,12 +11,14 @@ drawing_mode = st.selectbox(
     ("freedraw", "Home phone", "Mobile phone"),
 )
 
+st.write("You selected:", drawing_mode)
+
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
   stroke_color = st.color_picker("Pick A Color", "#00f900")
-  st.write("The current color is", color)
+  st.write("The current color is", stroke_color)
   bg_color = st.color_picker("Pick A Background Color", "#00f900")
+  st.write("The current Backgroundcolor is", bg_color)
 
-st.write("You selected:", drawing_mode)
 
 # Create a canvas component
 canvas_result = st_canvas(
