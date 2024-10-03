@@ -4,7 +4,7 @@ from streamlit_drawable_canvas import st_canvas
 st.title('Reconocimiento de Dígitos escritos a mano')
 
 with st.sidebar:
-stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
+  stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
 
 drawing_mode = st.selectbox(
   ("freedraw")
