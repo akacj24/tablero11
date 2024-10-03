@@ -11,7 +11,7 @@ drawing_mode = st.selectbox(
     ("freedraw", "Home phone", "Mobile phone"),
 )
 
-st.write("You selected:", option)
+st.write("You selected:", drawing_mode)
 
 
 stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
