@@ -5,16 +5,16 @@ st.title('Reconocimiento de Dígitos escritos a mano')
 
 with st.sidebar:
   stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-  stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-  stroke_color = st.color_picker("Pick A Color")
-  st.write("The current color is", color)
-  bg_color = st.color_picker("Pick A Background Color")
-
-
+  
 drawing_mode = st.selectbox(
     "Select the drawing mode",
     ("freedraw", "Home phone", "Mobile phone"),
 )
+
+stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
+  stroke_color = st.color_picker("Pick A Color")
+  st.write("The current color is", color)
+  bg_color = st.color_picker("Pick A Background Color")
 
 st.write("You selected:", drawing_mode)
 
